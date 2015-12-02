@@ -2,11 +2,10 @@
 
 Quick hack to see how hard it is to write a service monitor in rspec.
 
-UPDATE: it's not too hard, and the syntax is kind of nice, but it's
-not currently a good fit.  For example, if an attempt to connect to an
-imap server fails, I want to skip ALL imap-related tests.  This is
-completely at odds with what rspec wants to do, and the workarounds
-get ugly.
+*UPDATE:* it's not too hard, and the syntax is kind of nice, but it's
+not currently a good fit.  For example, if it fails to connect to
+an imap server, it should then skip ALL imap-related tests.  This is
+completely at odds with what rspec wants to do.
 
 It might be worth writing an rspec extension where any test failure
 in a block would skip the rest of the tests in that block.  That would
