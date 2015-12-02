@@ -2,7 +2,7 @@
 
 Quick hack to see how hard it is to write a service monitor in rspec.
 
-_UPDATE:_ it's not too hard, and the syntax is kind of nice, but it's
+**UPDATE:** it's not too hard, and the syntax is kind of nice, but it's
 not currently a good fit.  For example, if it fails to connect to
 an imap server, it should then skip *all* imap-related tests.  This is
 completely at odds with what rspec wants to do.
